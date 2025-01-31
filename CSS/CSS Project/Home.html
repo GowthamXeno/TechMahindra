@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url("./BackgroundImage.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book a Doctor Appointment</h1>
+        <form id="appointment-form" action="./Appointment.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="doctor">Doctor Available:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                <option value="dr_brown">Dr. Brown</option>
+            </select>
+
+            <button>Book Appointment</button>
+        </form>
+    </div>
+</body>
+
+</html>
