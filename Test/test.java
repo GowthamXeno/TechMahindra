@@ -1,5 +1,10 @@
+import java.util.*;
+
 class test {
     public static void main(String agrs[]) {
-        System.out.println("Tech Mahindra!");
+        Integer I = Integer.valueOf(10);
+        Integer i = 10;
+        System.out.println(I);
+        System.out.println(i);
     }
 }
